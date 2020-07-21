@@ -1,0 +1,202 @@
+/* general styling */
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+html,body{
+	background-color: #222831;
+        }
+/* navigation bar*/
+nav{
+	padding:0; 
+	background-color: #116979;
+	margin-left: 0px;
+	margin-top: 0px;
+	min-height: 70px;
+	width:100%;
+}
+.name{
+	display: inline-block;
+	margin:0;
+	font-size: 3.1em;
+	min-width:40%;
+	height: 100%;
+	font-family: 'Carter One', cursive;
+	letter-spacing: 4px;
+	z-index: 1;
+	color:#8cba51;
+}
+.name:hover{
+	cursor:pointer;
+}
+.co{
+	color:#fe346e;
+}
+.ter{
+	color:#fd5e53;
+}
+.as{
+	
+	color:#81f5ff;
+}
+.rm{
+	color:#feb72b;
+}
+.tag{
+	font-family: 'Dancing Script', cursive;
+	display: inline-block;
+	box-sizing: border-box; 
+	color:white;
+	margin: 0;
+	height: 100%;
+	font-size: 1.4em;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+}
+.us{
+	font-size: 1.4em;
+	display:flex;
+	justify-content: center;
+	box-sizing: border-box;
+	height: 100%;
+	background-color:  #116979;
+	border: 12px solid  #116979;
+	padding-top: 10px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	float: right;
+}
+.us a{
+color:white;
+text-decoration: none;
+margin: 0 auto;
+transition: 0.2s;
+}
+.us a:hover{
+	color:#222831;
+}
+.nav:after{
+	content:"";
+	clear:both;
+	display: block;
+}
+/* ------------------------------------*/
+/*------------image div------------------------*/
+.logo{
+width:100%;
+box-sizing: border-box;
+}
+.image{
+	height:400px;
+	width:400px;
+	display:block;
+	margin-top:5%;
+	margin-right:auto;
+	margin-left:auto;
+	border:3px solid #18b0b0;
+	border-radius: 125px;
+	animation:example;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+@keyframes example {
+  0%   {
+  	transform:rotate(0deg);
+  }
+  25%  {
+  	transform:rotate(90deg);
+  }
+  50%  {
+  	transform:rotate(180deg);
+  }
+  75% {transform:rotate(270deg);
+  }
+100% {transform:rotate(360deg);
+}
+}
+/*---- end of image div------------------ */
+/* last div for button */
+.last-div{
+margin-top: 100px;	
+width:100%;
+display:grid;
+justify-content: center;
+}
+.button{
+	border: 3px solid #18b0b0;
+	display: inline-block;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 15px;
+	font-size: 1.2em;
+	font-family: 'Roboto', sans-serif;
+	color:#116979;
+    background-color: #222831;
+}
+.button:hover
+{
+	background-color:#18b0b0;
+	border-color: #18b0b0;
+	box-shadow: 0 0 80px #18b0b0, 0 0 40px #18b0b0, 0 0 80px #18b0b0;
+	color: #116979;
+}
+/* end of last div */
+/* css for other devices */
+/* FOR DESKTOP  DEVICES */
+@media screen and (max-width:1200px)
+{.tag{
+	position: absolute;
+	display: block;
+	text-align: center;
+	bottom:50px; 
+	width: 100%;
+}
+.us{
+	width: 16%;
+}
+
+}
+@media screen and (max-width: 790px)
+{
+	.us{
+		width:20%;
+	}
+	.name{
+transform:scale(0.8); 
+	}
+	.tag{
+         font-size:1.1em;
+	}
+}
+/* mobile devices*/
+@media screen and (max-width: 600px)
+{
+.us{
+	width:24%;
+}
+.name{
+transform:scale(0.7); 
+	}
+.image{
+	height:300px;
+	width:300px;
+	border-radius: 100px;
+}
+}
+@media screen and (max-width: 390px)
+{.name{
+	transform: scale(0.5);
+}
+.us{
+	width:30%;
+}
+.us{
+	font-size: 1.2em;
+}
+.image{
+	width: 250px;
+	height: 250px;
+	border-radius: 80px;
+}
+}
