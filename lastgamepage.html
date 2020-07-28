@@ -16,7 +16,7 @@
       <h1 class="heading">About Us</h1>
 </div>
 <div id="main-content">
- <h1 class="starth1"><span class="mobile-head-hide">The</span> business <span class="mobile-head-hide">of ColorMaster</span></h1>
+ <h1 class="starth1 uppers"><span class="mobile-head-hide">The</span> business <span class="mobile-head-hide">of ColorMaster</span></h1>
 </div>
  <div class="div1">
              <h2>LAUNCH</h2>
@@ -25,21 +25,21 @@
                              </div>
 <br>
 <div class="intro">
-  <div class="merge">
-<button>Our Team</button>
+  <div class="merge sliders from-left">
+<h2>Our Team</h2>
 <div>
 <p>We have a  dedicated team of 100 memberes in which we have Devloperes and innovators.we also have 50 finance and managing staff.</p>
 </div>
 </div>
-<div class="merge">
-<button >Contact Us</button>
+<div class="merge uppers">
+<h2>Contact Us</h2>
 <div>
-   <p><i class='fas fa-phone-volume' style='font-size:24px'></i> - +91-1234123421</p><br>
+  <p><i class='fas fa-phone-volume' style='font-size:24px'></i> - +91-1234123421</p><br><br>
    <p><i class= 'far fa-envelope'    style='font-size:24px'></i> - cggproduction@gmail.com</p>
 </div>
 </div>
-<div class="merge">
-<button>Join Us</button>
+<div class="merge sliders from-right">
+<h2>Join Us</h2>
 <div>
 <p>If you have a high will and skill in web,app devlopments and have knowledge of finance and management than you can join us.</p>
 </div> 
@@ -62,7 +62,7 @@ state-Rajasthan(India)
  </p> 
  <br>  
  <p><strong>Have any questions?</strong><br>
-Support@userThemes.com
+Support@C.com
  </p>
 </div>
 
@@ -96,6 +96,53 @@ Thank You
                 All Rights Reserved T&C* Applied</p>
          </div>
        </div>
+<script type="text/javascript">
+  // code for lastgame page 
+window.onload = function(){
+  const appearOptions = {
+  threshold:0,
+  rootMargin:"0px 0px -40px 0px"
+}
+const appearboxes = document.querySelectorAll(".uppers");
+const appearOnScroll = new IntersectionObserver(
+  function(entries,appearOnScroll){
+    entries.forEach(entry=>{
+      if(!entry.isIntersecting){
+        return;
+      }
+      else{
+        entry.target.classList.add("appear");
+        appearOnScroll.unobserve(entry.target);
+      }
+    });
+  },
+  appearOptions);
+  appearboxes.forEach(appearbox=>{
+    appearOnScroll.observe(appearbox);
+  });
+    const slideOptions = {
+    threshold:0,
+    rootMargin:"0px 0px 0px 0px"
+  };
+  const teamsliders = document.querySelectorAll(".sliders")
+  const slideOnScroll = new IntersectionObserver(
+    function(entries,slideOnScroll){
+      entries.forEach(entry => {
+         if(!entry.isIntersecting){
+          return;
+         }
+         else{
+          entry.target.classList.add("slide");
+          slideOnScroll.unobserve(entry.target);
+         }  
+      });
+    },slideOptions);
+  
+  teamsliders.forEach(teamslider => {
+    slideOnScroll.observe(teamslider);
+  });
+}
 
+</script>
 </body>
 </html>
