@@ -18,7 +18,7 @@ for(var i=0;i<colors.length;i++)
 {
 	colorgiv[i].style.backgroundColor=colors[i];
 colorgiv[i].addEventListener("click",function(){
-var clickedcolor =this.style.backgroundColor;
+var clickedcolor = this.style.backgroundColor;
 if(clickedcolor===pickedcolor)
 {msg.textContent="correct";
 reset.textContent="Play Again!";

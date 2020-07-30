@@ -178,7 +178,7 @@ background-color:#15191e;
 /*last div of black background   */
 .last-div{background-color: #15191e;
 		font-family: 'Roboto Condensed', sans-serif;
-	height: 350px;
+		padding-bottom: 20px;
 }
 .last-div>h2{
 	font-size: 2.0em;
