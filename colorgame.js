@@ -5,7 +5,7 @@ var colorgiv =document.querySelectorAll(".color");
 var colorquest= document.getElementById("colorquest");
 var pickedcolor= pickcolor();
 var msg=document.getElementById("message");
-var head=document.querySelector(".head");
+var head=document.querySelector(".head-container");
 var reset=document.getElementById("reset");
 
 //start fro here

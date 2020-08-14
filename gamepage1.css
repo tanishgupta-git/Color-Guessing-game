@@ -26,22 +26,11 @@ nav{
 .name div{
 	display: inline-block;
 }
-.name:hover{
-	cursor:pointer;
-}
-.co{
-	color:#fe346e;
-}
-.ter{
-	color:#fd5e53;
-}
-.as{
-	
-	color:#81f5ff;
-}
-.rm{
-	color:#feb72b;
-}
+.name:hover{cursor:pointer;}
+.co{color:#fe346e;}
+.ter{color:#fd5e53;}
+.as{color:#81f5ff;}
+.rm{color:#feb72b;}
 .tag{
 	font-family:cursive;
 	color:white;
