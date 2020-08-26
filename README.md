@@ -1,2 +1,2 @@
 # Color-Guessing-game
-A game for understanding color codes
+A game for improving color codes understanding
